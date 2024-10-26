@@ -1,0 +1,156 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+<title>Welcome to NASA，</title>
+<link rel="icon" href="images/nasa.jpg">
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+<script type="application/x-javascript"> addEventListener("load", function() { setTimeout(hideURLbar, 0); }, false); function hideURLbar(){ window.scrollTo(0,1); } </script>
+
+<link rel="stylesheet" type="text/css" href="css/style.css">
+<!----menu_script---->
+    <script src="js/jquery.min.js"></script>
+<script>
+		$(function() {
+			var pull 		= $('#pull');
+				menu 		= $('nav ul');
+				menuHeight	= menu.height();
+
+			$(pull).on('click', function(e) {
+				e.preventDefault();
+				menu.slideToggle();
+			});
+
+			$(window).resize(function(){
+        		var w = $(window).width();
+        		if(w > 320 && menu.is(':hidden')) {
+        			menu.removeAttr('style');
+        		}
+    		});
+		});
+</script>
+</head>
+<body>
+<div class="header_bg">
+	<!---start-wrap---->
+<div class="wrap">
+	<!-----start-header----->
+	<div class="header">	
+		<div class="logo">
+			<a href="https://www.bilibili.com/video/BV1MW411p7vX/?share_source=copy_web&vd_source=9ca7a8d585a7804414faf69118faa35e"><img src="images/logo1.png" title="logo" /></a>
+		</div>	
+	<div class="cssmenu">
+			<ul>
+				<li><a href="index.html">我</a></li>
+				<li><a href="about.html">诗人的一切</a></li>
+				<li><a href="musings.html">诗</a></li>
+				<li><a href="verse.html">诗学</a></li>
+				<li><a href="prose.html">她与她忧伤的一切</a></li>
+				<li class="active"><a href="contact.html">留名</a></li>
+					<div class="clear"> </div>
+			</ul>
+	</div>
+	
+		<div class="clear"></div>
+		<div class="top-nav">
+		<nav class="clearfix">
+				<ul>
+				<li><a href="index.html">我</a></li>
+				<li><a href="about.html">诗人的一切</a></li>
+				<li><a href="musings.html">诗</a></li>
+				<li><a href="verse.html">诗学</a></li>
+				<li><a href="prose.html">她与她忧伤的一切</a></li>
+				<li class="active"><a href="contact.html">留名</a></li>
+				<div class="clear"> </div>
+			</ul>
+				<a href="#" id="pull">Menu</a>
+			</nav>
+		</div>
+	<div class="clear"></div>
+	</div>
+</div>
+</div>
+		<div class="header_bottom">
+		</div>
+		<!-----end-header-------->
+		<!---start-getintouch---->
+			<div class="get-intouch" id="contact">
+				<p class="blog-text">写完重新阅读了一遍，感觉很多地方词不达意，逻辑混乱，但并不打算重新修改，还请大家见谅，因为在书写的过程中我已经拥有了一次无与伦比的体验。如果以后有时间与机会，在与诸位细细谈吧。——2022.11 冬</p>
+				<p class="blog-text"> 最后在这里致谢，感谢我的父母，感谢我亲爱的家人，感谢我的朋友老师以及遇见的每一个人，是这所有让我能够在这里从容谈论诗歌，分享美。再一次，我表达深深的感激。同时我想对热心网友@cholerae表示感谢，感谢他提供的一系列视频与图片。最后衷心祝愿每位读者健康快乐。PS：网页中很多按钮不知道大家有没有乱点啊:)  最后分享一句话：如果每个人都是一颗小星球，逝去的亲友就是身边的暗物质。我愿能再见你，我知我再见不到你。但你的引力仍在。我感激我们的光锥曾彼此重叠，而你永远改变了我的星轨。纵使再不能相见，你仍是我所在的星系未曾分崩离析的原因，是我宇宙之网的永恒组成。——科学松鼠会（是不是有感触，很好，一定物理与宇宙击中了你的灵魂，如果你也喜欢物理，热爱天文，加入我和一群（其实目前只有网友@cholerae）热爱自然的朋友吧） </p>
+				<div class="wrap">
+					<h3>Contact Me</h3>
+				<div class="get-intouch-grids">
+					<div class="get-intouch-left-address">
+						<h4>下面是我的联系方式。欢迎大家的意见：(左侧的发送似乎使用不了，可以直接点击下方的邮箱)</h4>
+						<p></p>
+						<p>Panzhihua.Sichuan. China.</p>
+						<p>Postal code:61700</p>
+						<p><a href="mailto:2192534033@qq.com">2192534033@qq.com</a></p>
+					</div>
+					<div class="get-intouch-center-form">
+						<h5>Say hello!</h5>
+						<form>
+							<input class="frist" type="text" value="Name" onfocus="this.value = '';" onblur="if (this.value == '') {this.value = 'Name';}">
+							<input type="text" value="Email" onfocus="this.value = '';" onblur="if (this.value == '') {this.value = 'Email';}">
+							<textarea onfocus="if(this.value == 'Your Message') this.value='';" onblur="if(this.value == '') this.value='Your Message';" >Your Message</textarea>
+							<input type="submit" value="Send message" />
+							
+							<div class="clear"> </div>
+						</form>
+					</div>
+					<!-- aToolTip js -->
+						<script type="text/javascript" src="js/jquery.atooltip.js"></script>
+						<script type="text/javascript">
+							$(function(){ 
+								$('a.normalTip').aToolTip();
+								}); 
+						</script>
+					<div class="clear"> </div>
+				</div>
+				</div>
+				<div class="map">
+					<iframe width="100%" height="600" frameborder="0" scrolling="no" marginheight="0" marginwidth="0" src="https://mail.qq.com
+"> </iframe>
+				</div>
+</div>
+			<!---//End-getintouch---->
+			<!----start footer------>
+			<div class="footer">
+			<div class="wrap">
+			<div class="social">
+				<ul>
+					<li><a href="#"><img src="images/facebook.png"></a></li>
+					<li><a href="#"><img src="images/twitter.png"> </a></li>
+					<li><a href="#"><img src="images/vimeo.png"> </a></li>
+					<li><a href="#"><img src="images/dribbble.png"> </a></li>
+					<li><a href="#"> <img src="images/flickr.png"></a></li>
+					<div class="clear"> </div>
+				</ul>
+			</div>
+		</div>
+		</div><!-- scroll_top_btn -->
+		<script type="text/javascript" src="js/move-top.js"></script>
+		<script type="text/javascript" src="js/easing.js"></script>
+	    <script type="text/javascript">
+			$(document).ready(function() {
+			
+				var defaults = {
+		  			containerID: 'toTop', // fading element id
+					containerHoverID: 'toTopHover', // fading element hover id
+					scrollSpeed: 1200,
+					easingType: 'linear' 
+		 		};
+				
+				
+				$().UItoTop({ easingType: 'easeOutQuart' });
+				
+			});
+		</script>
+		 <a href="#" id="toTop" style="display: block;"><span id="toTopHover" style="opacity: 1;"></span></a>
+		<!--end scroll_top_btn -->
+		<div class="copy-right">
+			<p>Copyright &copy; 2022.Spike IHG All rights reserved.</p>	    
+		</div>
+
+</body>
+</html>
